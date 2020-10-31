@@ -1,0 +1,201 @@
+.emphasis {
+  font-weight: bold;
+}
+
+.text-align-right {
+  position: absolute;
+  right: 0;
+  text-decoration: underline;
+  color: blue;
+}
+._email {
+  text-decoration: underline;
+  color: blue;
+  margin-left: -0.6rem;
+}
+
+.guarantee-form {
+  height: 100%;
+  margin: 10rem 3rem 2rem 3rem;
+
+  &__address-area {
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  &__table {
+    background-color: #c3cdea;
+    width: 70vw;
+    height: 15.5rem;
+    position: relative;
+    top: 20px;
+
+    &::after {
+      // wrapper
+      content: "";
+      position: absolute;
+      display: inline-block;
+      height: 4.4rem;
+      border-left: 0.1px solid #ced5f4;
+      top: 11.1rem;
+      left: 6.6rem;
+    }
+    &-header {
+      background-color: #4055b0;
+      color: #d3e0ff;
+    }
+
+    &-title {
+      display: inline-block;
+      padding-left: 10px;
+      width: 25.5rem;
+      border-right: 0.1px solid #4a65b5;
+    }
+
+    &-createdAt {
+      padding-left: 0.3rem;
+    }
+
+    &-stockNo,
+    &-condition,
+    &-brand,
+    &-model,
+    &-serial,
+    &-movement,
+    &-material,
+    &-remark {
+      border-bottom: 0.1px solid #ced5f4;
+      &-1 {
+        font-weight: bold;
+        display: inline-block;
+        padding-left: 10px;
+        width: 6rem;
+        border-right: 0.1px solid #ced5f4;
+      }
+
+      &-2 {
+        padding-left: 0.5rem;
+      }
+    }
+
+    &-sellerInfo {
+      &-spec {
+        position: relative;
+        left: 116px;
+        top: -19px;
+      }
+      &-1 {
+        position: relative;
+        top: 1.5rem;
+        display: inline-block;
+        padding-left: 10px;
+        margin-right: 20px;
+        width: 6rem;
+        font-weight: bold;
+      }
+      &-2 {
+        font-size: 1.2rem;
+      }
+      &-3,
+      &-4,
+      &-5 {
+        font-size: 0.7rem;
+      }
+      &-3 ._email {
+        margin-left: 0.2rem;
+      }
+      &-5 {
+        text-decoration: underline;
+        color: blue;
+      }
+    }
+  }
+  &__caution {
+    display: inline-block;
+    position: absolute;
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    top: 30rem;
+    height: 80rem;
+    width: 43rem;
+
+    &-title-1,
+    &-title-2 {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    & .font-small {
+      font-size: 0.8rem;
+    }
+    & img {
+      width: 1.8rem;
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    top: 53rem;
+    right: 3.5rem;
+
+    &-1 {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: red;
+    }
+
+    &-2 {
+      margin-top: 1rem;
+      &-1 {
+        letter-spacing: 0.6px;
+        width: 5rem;
+        position: absolute;
+        right: 20rem;
+      }
+      &-2 {
+        font-size: 0.9rem;
+        justify-content: center;
+      }
+    }
+
+    &-3 {
+      &-1 {
+        letter-spacing: 4px;
+        width: 5rem;
+        position: absolute;
+        right: 20rem;
+      }
+      &-2 {
+        font-size: 0.9rem;
+        justify-content: center;
+      }
+    }
+
+    &-4 {
+      margin-top: 1rem;
+      &-1 {
+        letter-spacing: 0.6px;
+        width: 5rem;
+        position: absolute;
+        right: 20rem;
+      }
+      &-2 {
+        position: absolute;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+  &__qrcode {
+    position: absolute;
+    top: 56rem;
+    left: 42rem;
+  }
+}

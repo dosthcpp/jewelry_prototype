@@ -19,16 +19,6 @@ function createWindow() {
     },
   });
 
-  win.webContents.openDevTools();
-
-  const popup = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      nodeIntegration: true,
-    },
-  });
-
   /*
    * ELECTRON_START_URL을 직접 제공할경우 해당 URL을 로드합니다.
    * 만일 URL을 따로 지정하지 않을경우 (프로덕션빌드) React 앱이
@@ -37,7 +27,7 @@ function createWindow() {
   const startUrl =
     process.env.ELECTRON_START_URL ||
     url.format({
-      pathname: path.join(__dirname, "/../build/index.html"),
+      pathname: path.join(__dirname, "../build/index.html"),
       protocol: "file:",
       slashes: true,
     });

@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { connect } from "react-redux";
+import { fetchUserinfo } from "../actions/index";
 import 돋보기 from "../icons/돋보기.png";
 import 시계 from "../icons/시계.png";
 import 설정 from "../icons/설정.png";
 import 템플릿 from "../icons/템플릿.png";
 import 가져오기 from "../icons/가져오기.png";
 import 휴지통 from "../icons/휴지통.png";
-import axios from "axios";
+import { serverURL } from "../api/api";
 
-const SideMenu = () => {
+const SideMenu = ({ fetchUserinfo }) => {
   let [click, setClick] = useState(false);
   let [userInfo, setUserInfo] = useState("로그인 해주세요");
   let [userEmail, setUserEmail] = useState("");
@@ -31,11 +33,11 @@ const SideMenu = () => {
           return cur[1] !== undefined && cur[1].length !== 0 ? (
             <div>
               <li
+                key={`menu-list-${idx}`}
                 className="menu-list"
                 onClick={() => {
                   setClick(!click);
                 }}
-                key={idx}
               >
                 {click ? nonCollapseable : collapseable}
                 {cur[0]}
@@ -48,7 +50,10 @@ const SideMenu = () => {
               >
                 {cur[1].map((curMenu, idx) => {
                   return (
-                    <li className={`menu-list submenu-item-${idx + 1}`}>
+                    <li
+                      key={`menu-list-${idx}`}
+                      className={`menu-list submenu-item-${idx + 1}`}
+                    >
                       {collapseable}
                       {curMenu}
                     </li>
@@ -58,6 +63,7 @@ const SideMenu = () => {
             </div>
           ) : (
             <li
+              key={`menu-list-${idx}`}
               className={`menu-list-${idx}`}
               onClick={() => {
                 console.log(cur[1]);
@@ -89,16 +95,18 @@ const SideMenu = () => {
                 width: 800,
                 height: 600,
               });
-              register.webContents.on("did-redirect-navigation", (data) => {
+              register.webContents.on("did-redirect-navigation", () => {
                 let code = `document.getElementsByTagName("pre")[0].innerHTML;`;
                 register.webContents.executeJavaScript(code).then((result) => {
                   register.close();
-                  setUserInfo(JSON.parse(result).name);
-                  setUserEmail(JSON.parse(result).email);
+                  const { name, email } = JSON.parse(result);
+                  setUserInfo(name);
+                  setUserEmail(email);
+                  fetchUserinfo(name, email);
                 });
               });
 
-              register.loadURL("https://84e1c2a2972a.ngrok.io/");
+              register.loadURL(`${serverURL}/login`);
             }}
           >
             {userInfo}
@@ -173,4 +181,4 @@ const SideMenu = () => {
   );
 };
 
-export default SideMenu;
+export default connect(null, { fetchUserinfo })(SideMenu);

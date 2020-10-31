@@ -1,32 +1,49 @@
 {
-  "name": "dingoapp",
+  "name": "jewelry-app",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
+  "description": "A Jewelry App prototype.",
+  "author": {
+    "name": "Doyeon Baek"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.20.0",
+    "babel-preset-react-app": "^10.0.0",
+    "babel-runtime": "^6.26.0",
+    "child_process": "^1.0.2",
+    "dialogs": "^2.0.1",
     "dotenv": "^8.2.0",
+    "electron-prompt": "^1.6.0",
+    "emailjs-com": "^2.6.3",
+    "node-blockly": "^1.2.8",
+    "qrcode.react": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-new-window": "^0.1.2",
     "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "smalltalk": "^4.0.7",
+    "uninstall": "0.0.0"
   },
   "main": "public/Main.js",
-  "homepage": "./",
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "react-start": "BROWSER=none PORT=3001 yarn start",
-    "electron-start": "ELECTRON_START_URL=http://localhost:3001 electron .",
-    "electron-pack": "yarn build && electron-builder build -c.extraMetadata.main=build/Main.js",
-    "compile:sass": "node-sass sass/main.scss src/css/style.css -w"
+    "rs": "BROWSER=none PORT=3000 yarn start",
+    "es": "ELECTRON_START_URL=http://localhost:3000 electron .",
+    "cs": "node-sass sass/main.scss src/css/style.css -w",
+    "electron-pack": "npm run-script build && electron-builder build -c.extraMetadata.main=build/Main.js"
   },
   "eslintConfig": {
     "extends": "react-app"

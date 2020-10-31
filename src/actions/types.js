@@ -1,2 +1,2 @@
-export const GET_DATA = "GET_DATA";
-export const GET_AGREEMENT = "GET_AGREEMENT";
+export const GET_USERINFO = "GET_USERINFO";
+export const SET_GUARANTEE = "SET_GUARANTEE";

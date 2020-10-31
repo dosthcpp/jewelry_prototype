@@ -14,8 +14,8 @@
 
 html {
   background-color: #f2f3f4;
-  height: 1080px;
-  width: 1920px; }
+  height: 100%;
+  width: 100%; }
 
 body {
   padding: 5px 5px;
@@ -441,3 +441,147 @@ li.menu-item {
     background-color: lightblue;
     color: white;
     font-size: 2rem; }
+
+.mailing {
+  position: absolute;
+  width: 15rem;
+  top: 10rem;
+  left: 17.5rem; }
+
+.emphasis {
+  font-weight: bold; }
+
+.text-align-right {
+  position: absolute;
+  right: 0;
+  text-decoration: underline;
+  color: blue; }
+
+._email {
+  text-decoration: underline;
+  color: blue;
+  margin-left: -0.6rem; }
+
+.guarantee-form {
+  height: 100%;
+  margin: 10rem 3rem 2rem 3rem; }
+  .guarantee-form__address-area {
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    font-size: 0.7rem;
+    line-height: 1rem; }
+  .guarantee-form__title {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .guarantee-form__table {
+    background-color: #c3cdea;
+    width: 70vw;
+    height: 15.5rem;
+    position: relative;
+    top: 20px; }
+    .guarantee-form__table::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      height: 4.4rem;
+      border-left: 0.1px solid #ced5f4;
+      top: 11.1rem;
+      left: 6.6rem; }
+    .guarantee-form__table-header {
+      background-color: #4055b0;
+      color: #d3e0ff; }
+    .guarantee-form__table-title {
+      display: inline-block;
+      padding-left: 10px;
+      width: 25.5rem;
+      border-right: 0.1px solid #4a65b5; }
+    .guarantee-form__table-createdAt {
+      padding-left: 0.3rem; }
+    .guarantee-form__table-stockNo, .guarantee-form__table-condition, .guarantee-form__table-brand, .guarantee-form__table-model, .guarantee-form__table-serial, .guarantee-form__table-movement, .guarantee-form__table-material, .guarantee-form__table-remark {
+      border-bottom: 0.1px solid #ced5f4; }
+      .guarantee-form__table-stockNo-1, .guarantee-form__table-condition-1, .guarantee-form__table-brand-1, .guarantee-form__table-model-1, .guarantee-form__table-serial-1, .guarantee-form__table-movement-1, .guarantee-form__table-material-1, .guarantee-form__table-remark-1 {
+        font-weight: bold;
+        display: inline-block;
+        padding-left: 10px;
+        width: 6rem;
+        border-right: 0.1px solid #ced5f4; }
+      .guarantee-form__table-stockNo-2, .guarantee-form__table-condition-2, .guarantee-form__table-brand-2, .guarantee-form__table-model-2, .guarantee-form__table-serial-2, .guarantee-form__table-movement-2, .guarantee-form__table-material-2, .guarantee-form__table-remark-2 {
+        padding-left: 0.5rem; }
+    .guarantee-form__table-sellerInfo-spec {
+      position: relative;
+      left: 116px;
+      top: -19px; }
+    .guarantee-form__table-sellerInfo-1 {
+      position: relative;
+      top: 1.5rem;
+      display: inline-block;
+      padding-left: 10px;
+      margin-right: 20px;
+      width: 6rem;
+      font-weight: bold; }
+    .guarantee-form__table-sellerInfo-2 {
+      font-size: 1.2rem; }
+    .guarantee-form__table-sellerInfo-3, .guarantee-form__table-sellerInfo-4, .guarantee-form__table-sellerInfo-5 {
+      font-size: 0.7rem; }
+    .guarantee-form__table-sellerInfo-3 ._email {
+      margin-left: 0.2rem; }
+    .guarantee-form__table-sellerInfo-5 {
+      text-decoration: underline;
+      color: blue; }
+  .guarantee-form__caution {
+    display: inline-block;
+    position: absolute;
+    font-size: 0.8rem;
+    letter-spacing: 1.2px;
+    top: 30rem;
+    height: 80rem;
+    width: 43rem; }
+    .guarantee-form__caution-title-1, .guarantee-form__caution-title-2 {
+      font-size: 1.1rem;
+      font-weight: bold; }
+    .guarantee-form__caution .font-small {
+      font-size: 0.8rem; }
+    .guarantee-form__caution img {
+      width: 1.8rem; }
+  .guarantee-form__footer {
+    position: absolute;
+    top: 53rem;
+    right: 3.5rem; }
+    .guarantee-form__footer-1 {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: red; }
+    .guarantee-form__footer-2 {
+      margin-top: 1rem; }
+      .guarantee-form__footer-2-1 {
+        letter-spacing: 0.6px;
+        width: 5rem;
+        position: absolute;
+        right: 20rem; }
+      .guarantee-form__footer-2-2 {
+        font-size: 0.9rem;
+        justify-content: center; }
+    .guarantee-form__footer-3-1 {
+      letter-spacing: 4px;
+      width: 5rem;
+      position: absolute;
+      right: 20rem; }
+    .guarantee-form__footer-3-2 {
+      font-size: 0.9rem;
+      justify-content: center; }
+    .guarantee-form__footer-4 {
+      margin-top: 1rem; }
+      .guarantee-form__footer-4-1 {
+        letter-spacing: 0.6px;
+        width: 5rem;
+        position: absolute;
+        right: 20rem; }
+      .guarantee-form__footer-4-2 {
+        position: absolute;
+        margin-top: 1rem;
+        font-weight: bold; }
+  .guarantee-form__qrcode {
+    position: absolute;
+    top: 56rem;
+    left: 42rem; }

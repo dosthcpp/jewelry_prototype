@@ -1,10 +1,7 @@
 import axios from "axios";
-// import path from "path";
-// import dotenv from "dotenv";
 
-// dotenv.config({ path: path.join(__dirname, "../../.env") });
-
-export const baseURL = "http://9b22e7e3325a.ngrok.io";
+export const serverURL = "http://korjarvis.hopto.org:8086";
+export const baseURL = "http://localhost:3000";
 
 export default axios.create({
   baseURL,
