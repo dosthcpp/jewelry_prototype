@@ -11,9 +11,12 @@
 # production
 /build
 
+<<<<<<< HEAD
 # distribution
 dist/
 
+=======
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
 # misc
 .DS_Store
 .env.local

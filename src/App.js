@@ -5,8 +5,11 @@ import SideMenu from "./components/SideMenu";
 import ContentHeader from "./components/ContentHeader";
 import Content from "./components/Content";
 import "./css/style.css";
+<<<<<<< HEAD
 import { Route, Switch } from "react-router-dom";
 import GuaranteeWindow from "./components/Guarantee";
+=======
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
 
 const App = () => {
   return (
@@ -26,6 +29,7 @@ const App = () => {
   );
 };
 
+<<<<<<< HEAD
 const Wrapper = () => {
   return (
     <Switch>
@@ -36,3 +40,6 @@ const Wrapper = () => {
 };
 
 export default Wrapper;
+=======
+export default App;
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57

@@ -17,15 +17,22 @@
     "child_process": "^1.0.2",
     "dialogs": "^2.0.1",
     "dotenv": "^8.2.0",
+<<<<<<< HEAD
     "electron-is-dev": "^1.2.0",
     "electron-prompt": "^1.6.0",
     "emailjs-com": "^2.6.3",
+=======
+    "electron-prompt": "^1.6.0",
+    "emailjs-com": "^2.6.3",
+    "node-blockly": "^1.2.8",
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
     "qrcode.react": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-new-window": "^0.1.2",
     "react-redux": "^7.2.1",
     "react-router-dom": "^5.2.0",
+<<<<<<< HEAD
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
@@ -35,6 +42,14 @@
     "electron": "^10.1.2",
     "electron-builder": "^22.8.1",
     "npm-run-all": "^4.1.5"
+=======
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "smalltalk": "^4.0.7",
+    "uninstall": "0.0.0"
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
   },
   "main": "public/Main.js",
   "homepage": ".",
@@ -43,8 +58,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "rs": "yarn start",
     "es": "electron .",
+=======
+    "rs": "BROWSER=none PORT=3000 yarn start",
+    "es": "ELECTRON_START_URL=http://localhost:3000 electron .",
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
     "cs": "node-sass sass/main.scss src/css/style.css -w",
     "electron-pack": "npm run-script build && electron-builder build -c.extraMetadata.main=build/Main.js"
   },
@@ -62,6 +82,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   }
  
+=======
+  },
+  "devDependencies": {
+    "electron": "^10.1.2",
+    "electron-builder": "^22.8.1",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5"
+  }
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
 }

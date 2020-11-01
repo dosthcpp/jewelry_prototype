@@ -121,7 +121,11 @@ const Content = ({ userInfo, setGuaranteeInfo }) => {
                     ""
                   );
 <<<<<<< HEAD
+<<<<<<< HEAD
                   const outFile = `C:\\temp\\out.png`;
+=======
+                  const outFile = `${os.tmpdir()}/out.png`;
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
 =======
                   const outFile = `${os.tmpdir()}/out.png`;
 >>>>>>> b89d77596b476d8d061179488debb9a325304c57
@@ -142,7 +146,11 @@ const Content = ({ userInfo, setGuaranteeInfo }) => {
                       case "win32":
                         childProcess.execSync(
 <<<<<<< HEAD
+<<<<<<< HEAD
                           `print C:\\temp\\out.png`,
+=======
+                          `ptp ${outFile}`,
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
 =======
                           `ptp ${outFile}`,
 >>>>>>> b89d77596b476d8d061179488debb9a325304c57
@@ -160,7 +168,11 @@ const Content = ({ userInfo, setGuaranteeInfo }) => {
                   });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                   fs.unlinkSync(outFile);
+=======
+                  // fs.unlinkSync(outFile);
+>>>>>>> b89d77596b476d8d061179488debb9a325304c57
 =======
                   // fs.unlinkSync(outFile);
 >>>>>>> b89d77596b476d8d061179488debb9a325304c57
